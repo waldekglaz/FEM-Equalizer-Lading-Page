@@ -12,7 +12,7 @@
   color: #191826;
   background-image: url("../assets/bg-main-mobile.png");
   background-repeat: no-repeat;
-  background-position: top 50% right 70%;
+  background-position: top -20% right 70%;
 }
 
 .container {
@@ -75,6 +75,7 @@
   background-color: #fa7453;
   color: #fcfaf9;
   padding: 3rem 2.25rem;
+  border-radius: 12px;
 }
 
 .main__title {
@@ -132,15 +133,27 @@
 .btn--black {
   background-color: #191826;
   color: #fcfaf9;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.btn--black:hover {
+  background-color: #66e2dc;
 }
 
 .btn--white {
   background-color: #fcfaf9;
   color: #191826;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.btn--white:hover {
+  background-color: #ffb964;
 }
 
 .footer {
-  margin-top: 585px;
+  margin-top: 605px;
   padding-bottom: 5rem;
 }
 
@@ -169,10 +182,146 @@
 
 .footer__social-link {
   margin-right: 20px;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
 }
 
 .footer__social-link-icon {
   height: 20px;
   width: 20px;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.footer__social-link-icon:hover {
+  -webkit-filter: invert(68%) sepia(58%) saturate(3846%) hue-rotate(326deg) brightness(100%) contrast(97%);
+          filter: invert(68%) sepia(58%) saturate(3846%) hue-rotate(326deg) brightness(100%) contrast(97%);
+}
+
+@media (min-width: 768px) {
+  .body {
+    font-size: 18px;
+    background-image: url("../assets/bg-pattern-1.svg"), url("../assets/bg-main-tablet.png");
+    background-size: 266px 400px, 983px 808px;
+    background-position: top -5% right -8%, top -20% right;
+    background-repeat: no-repeat;
+  }
+  .container {
+    padding: 0 2.4375rem;
+  }
+  .header {
+    padding-top: 3.875rem;
+  }
+  .hero {
+    padding-right: 10.625rem;
+    margin-bottom: 15.5625rem;
+  }
+  .hero__title {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 1.75rem;
+  }
+  .main__background-image {
+    width: 90.625%;
+    height: 37.5rem;
+    margin: 0 auto;
+  }
+  .main__img {
+    left: 8.65%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    height: 34.75rem;
+    width: 16.875rem;
+  }
+  .main__text-content {
+    width: 25rem;
+    right: 9%;
+    top: 194px;
+    bottom: -212px;
+    z-index: 3;
+  }
+  .footer {
+    margin-top: 305px;
+    padding-bottom: 5.3125rem;
+  }
+  .footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .footer__text {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .footer__text {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .body {
+    font-size: 20px;
+    background-image: url("../assets/bg-pattern-1.svg"), url("../assets/bg-main-desktop.png");
+    background-size: 312px 468px, 1613px 1758px;
+    background-position: top -5% right 27px, top -170% right 0;
+    background-repeat: no-repeat;
+  }
+  .container {
+    padding-left: 4.3125rem;
+    padding-right: 4.3125rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    padding-left: 10.3125rem;
+    padding-right: 10.3125rem;
+  }
+  .header__logo {
+    margin-bottom: 7.9375rem;
+  }
+  .hero__title {
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .hero__text {
+    padding-right: 4.5rem;
+    line-height: 2.125rem;
+  }
+  .main__background-image {
+    width: 77%;
+    height: 37.5rem;
+    background-position: top center;
+    background-size: 312px 468px;
+  }
+  .main__img {
+    height: 37.875rem;
+    width: 17.5rem;
+    left: 18%;
+  }
+  .main__text-content {
+    width: 27.875rem;
+    right: 4%;
+    top: 150px;
+    bottom: -138px;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__logo {
+    margin-right: 8.5625rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
