@@ -54,11 +54,12 @@ $fontMain: "IBM Plex Sans", sans-serif;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  border-radius: 12px;
   position: relative;
 }
 .main__img {
   position: absolute;
-  top: -98px;
+  top: -24%;
   width: 13.06rem;
   height: 26.875rem;
   left: 50%;
@@ -68,7 +69,7 @@ $fontMain: "IBM Plex Sans", sans-serif;
 
 .main__text-content {
   position: absolute;
-  bottom: -565px;
+  top: 95%;
   width: 100%;
   background-color: $clrRed;
   color: $clrWhite;
@@ -97,8 +98,8 @@ $fontMain: "IBM Plex Sans", sans-serif;
   display: block;
   font-weight: 700;
   text-decoration: none;
-  width: 296px;
-  height: 61px;
+  max-width: 18.5rem;
+  height: 3.8125rem;
   letter-spacing: -0.18px;
   border-radius: 12px;
   display: flex;
@@ -106,7 +107,7 @@ $fontMain: "IBM Plex Sans", sans-serif;
   justify-content: center;
   margin: 0 auto 1rem;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .btn__icon {
   margin-right: 0.455625rem;
@@ -129,7 +130,7 @@ $fontMain: "IBM Plex Sans", sans-serif;
 }
 
 .footer {
-  margin-top: 605px;
+  margin-top: 40.8125rem;
   padding-bottom: 5rem;
 }
 .footer__logo {
@@ -202,11 +203,11 @@ $fontMain: "IBM Plex Sans", sans-serif;
     width: 25rem;
     right: 9%;
     top: 194px;
-    bottom: -212px;
+    bottom: -182px;
     z-index: 3;
   }
   .footer {
-    margin-top: 305px;
+    margin-top: 19.0625rem;
     padding-bottom: 5.3125rem;
   }
   .footer__wrapper {
@@ -242,6 +243,9 @@ $fontMain: "IBM Plex Sans", sans-serif;
   }
   .header__logo {
     margin-bottom: 7.9375rem;
+  }
+  .hero {
+    max-width: 1215px;
   }
   .hero__title {
     font-size: 5.5rem;
